@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/javascript/index.js"></script>
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Weather App</h1>
+      <div class="tabcontainer">
+        <p class="tab" data-userweather>Your Weather</p>
+        <p class="tab" data-searcheweather>Search Weather</p>
+      </div>
+
+      <section class="weather-container">
+        <!-- Grant-location  -->
+        <div class="sub-container grant-location-dontainer">
+          <img
+            src="./assests/images-removebg-preview.png"
+            loading="lazy"
+            width="80"
+            height="80"
+          />
+          <p>grant location access</p>
+          <p>allow access to get weather information</p>
+          <button class="btn" data-grantAccess>Grant Access</button>
+        </div>
+
+        <!-- Search-form  -->
+        <form class="form-container" data-searchForm>
+          <input placeholder="Search From city...." data-dearchinput />
+          <button class="btn">
+            <img
+              src="./assests/download-removebg-preview.png"
+              loading="lazy"
+              width="20"
+              height="20"
+            />
+          </button>
+        </form>
+        <!-- loading screen conatiner  -->
+        <div class="sub-container loading-container">
+          <img
+            src="./assests/34338d26023e5515f6cc8969aa027bca_w200.gif"
+            loading="lazy"
+            width="150"
+            height="150"
+          />
+          <p>Loading</p>
+        </div>
+
+        <!-- show weather information container  -->
+        <div class="sub-container user-info-container">
+          <div class="name">
+            <p data-city-name></p>
+            <img data-contury-icon />
+          </div>
+          <p data-weatherdec style="text-transform: capitalize"></p>
+          <img data-weather-icon />
+          <p data-temprature></p>
+          <!-- 3-card-container -->
+          <div class="parameter-container">
+            <!-- card 1 -->
+            <div class="card">
+              <img
+                src="./assests/61-618314_wind-weather-lines-group-symbol-wind-symbol-transparent-removebg-preview.png"
+                loading="lazy"
+                width="80"
+                height="80"
+              />
+              <p>Windspeed</p>
+              <p data-wind-speed></p>
+            </div>
+            <!-- card-2  -->
+            <div class="card">
+              <img
+                src="./assests/download__2_-removebg-preview.png"
+                loading="lazy"
+                width="80"
+                height="80"
+              />
+              <p>Humidity</p>
+              <p data-humidity></p>
+            </div>
+            <!-- card3  -->
+            <div class="card">
+              <img
+                src="./assests/download__1_-removebg-preview.png"
+                loading="lazy"
+                width="80"
+                height="80"
+              />
+              <p>clouds</p>
+              <p data-cloudsF></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

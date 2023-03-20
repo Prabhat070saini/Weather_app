@@ -1,0 +1,243 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colordardk1: #112d4e;
+    --colodark2: #3f72af;
+    --cololight1: #BDE2EF;
+    --colorlight2: #f9f7f7;
+}
+
+.tab.current-tab {
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.form-container.active {
+    scale: 1;
+    opacity: 1;
+}
+
+.wrapper {
+    width: 100vw;
+    max-height: 100vh;
+    color: var(--colorlight2);
+    background: linear-gradient(160deg, #112d4e, #3e72af 100%);
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.tabcontainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 4rem;
+}
+
+.tab {
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.weather-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    margin-block: 4rem;
+}
+
+.btn {
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colodark2);
+    cursor: pointer;
+    padding: 10px 30px;
+
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grant-location-dontainer {
+    display: none;
+}
+
+.grant-location-dontainer.active {
+    display: flex;
+}
+
+.grant-location-dontainer img {
+
+    margin-bottom: 2rem;
+}
+
+
+.grant-location-dontainer p:first-of-type {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.grant-location-dontainer p:last-of-type {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    letter-spacing: 0.75px;
+    text-transform: capitalize;
+}
+
+.loading-container {
+    display: none;
+}
+
+.loading-container.active {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.loading-container p {
+    text-transform: uppercase;
+}
+
+.user-info-container {
+    display: none;
+
+}
+
+.user-info-container.active {
+    display: flex;
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.user-info-container p {
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+
+.user-info-container img {
+    width: 5.625rem;
+    height: 5.625rem;
+}
+
+.name p {
+    font-size: 2rem;
+}
+
+.name img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.user-info-container p[data-temprature] {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.parameter-container {
+    /* width: 90%; */
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 12.5rem;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 1rem;
+    gap: 0.3125rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.card p :first-of-type {
+    font-size: 1.15rem;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+.card p :last-of-type {
+    font-size: 1em;
+    font-weight: 200;
+
+}
+
+.form-container {
+    display: none;
+    /* display: flex; */
+    width: 90%;
+    max-width: 34.375rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.form-container.active {
+    display: flex;
+}
+
+.form-container input {
+    all: unset;
+    width: calc(100% - 80px);
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border-radius: 0.7rem;
+    background-color: rgba(219, 226, 239, 0.5);
+}
+
+.form-container input::placeholder {
+    color: var(--colorlight2);
+}
+
+.form-container button {
+    padding: unset;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
