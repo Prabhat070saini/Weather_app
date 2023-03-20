@@ -25,7 +25,7 @@
 
 .wrapper {
     width: 100vw;
-    max-height: 100vh;
+    height: 100vh;
     color: var(--colorlight2);
     background: linear-gradient(160deg, #112d4e, #3e72af 100%);
     overflow-x: hidden;
